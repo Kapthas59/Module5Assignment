@@ -96,8 +96,8 @@ $ajaxUtils.sendGetRequest(
         // Pay attention to what type of data that function returns vs what the chosenCategoryShortName
         // variable's name implies it expects.
         console.log(categories);
-        console.log(chooseRandomCategory('categories'));
-        var chosenCategoryShortName = "'" + chooseRandomCategory('categories').short_name + "'";
+        console.log(chooseRandomCategory(categories));
+        var chosenCategoryShortName = "'" + chooseRandomCategory(categories).short_name + "'";
         console.log(chosenCategoryShortName);
 
 
@@ -122,7 +122,7 @@ $ajaxUtils.sendGetRequest(
 
       },
       false); // False here because we are getting just regular HTML from the server, so no need to process JSON.
-}, // ***** <---- TODO: STEP 1: Substitute [...] ******
+  }, // ***** <---- TODO: STEP 1: Substitute [...] ******
   true); // Explicitly setting the flag to get JSON from server processed into an object literal
 });
 // *** finish **
