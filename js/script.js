@@ -96,7 +96,7 @@ $ajaxUtils.sendGetRequest(
         // Pay attention to what type of data that function returns vs what the chosenCategoryShortName
         // variable's name implies it expects.
         console.log(categories);
-        var chosenCategoryShortName = "'" + chooseRandomCategory('categories.short_name') + "'";
+        var chosenCategoryShortName = "'" + chooseRandomCategory('categories').short_name + "'";
         chosenCategoryShortName = chosenCategoryShortName.toUpperCase();
         console.log(chosenCategoryShortName);
 
