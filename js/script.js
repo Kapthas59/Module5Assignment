@@ -95,10 +95,7 @@ $ajaxUtils.sendGetRequest(
         // TODO: STEP 2: Here, call chooseRandomCategory, passing it retrieved 'categories'
         // Pay attention to what type of data that function returns vs what the chosenCategoryShortName
         // variable's name implies it expects.
-        console.log(categories);
-        console.log(chooseRandomCategory(categories));
         var chosenCategoryShortName = "'" + chooseRandomCategory(categories).short_name + "'";
-        console.log(chosenCategoryShortName);
 
 
         // TODO: STEP 3: Substitute {{randomCategoryShortName}} in the home html snippet with the
@@ -202,7 +199,6 @@ function buildCategoriesViewHtml(categories,
     var html = categoryHtml;
     var name = "" + categories[i].name;
     var short_name = categories[i].short_name;
-    console.log(short_name);
     html =
       insertProperty(html, "name", name);
     html =
@@ -249,7 +245,6 @@ function buildAndShowMenuItemsHTML (categoryMenuItems) {
 function buildMenuItemsViewHtml(categoryMenuItems,
                                 menuItemsTitleHtml,
                                 menuItemHtml) {
-  console.log(categoryMenuItems.category.name)
   menuItemsTitleHtml =
     insertProperty(menuItemsTitleHtml,
                    "name",
